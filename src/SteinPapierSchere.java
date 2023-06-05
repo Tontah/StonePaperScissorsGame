@@ -5,51 +5,61 @@ public class SteinPapierSchere {
         1 stands for scissors, and
         2 stands for stone.
      */
-    static Spieler spielerA = new Spieler(0, "A", 0,0,0);
-    static Spieler spielerB = new Spieler(0, "B", 0,0,0);
-    public static void game(){
-        if (spielerB.paperScissorsStone == 0){
-            if (spielerA.paperScissorsStone == 0){
-                spielerA.indecisive++;
-                spielerB.indecisive++;
+
+    public  static String game(Spieler spielerA, Spieler spielerB)
+    {
+        if (spielerB.getChoice() == 0){
+            if (spielerA.getChoice() == 0){
+                spielerA.setIndecisive(spielerA.getIndecisive()+1);
+                spielerB.setIndecisive(spielerA.getIndecisive()+1);
+                return "indecisive";
             }
-            if (spielerA.paperScissorsStone == 1){
-                spielerA.wins++;
-                spielerB.lose++;
+            if (spielerA.getChoice() == 1){
+                spielerA.setWins(spielerA.getWins()+1);
+                spielerB.setLose(spielerB.getLose()+1);
+                return "Player A wins";
             }
-            if (spielerA.paperScissorsStone == 2){
-                spielerB.wins++;
-                spielerA.lose++;
-            }
-        }
-        if (spielerB.paperScissorsStone == 1){
-            if (spielerA.paperScissorsStone == 0){
-                spielerB.wins++;
-                spielerA.lose++;
-            }
-            if (spielerA.paperScissorsStone == 1){
-                spielerA.indecisive++;
-                spielerB.indecisive++;
-            }
-            if (spielerA.paperScissorsStone == 2){
-                spielerA.wins++;
-                spielerB.lose++;
+            if (spielerA.getChoice() == 2){
+                spielerB.setWins(spielerB.getWins()+1);
+                spielerA.setLose(spielerA.getLose()+1);
+                return "Player B wins";
             }
         }
-        if (spielerB.paperScissorsStone == 2){
-            if (spielerA.paperScissorsStone == 0){
-                spielerA.wins++;
-                spielerB.lose++;
+        if (spielerB.getChoice() == 1){
+            if (spielerA.getChoice() == 0){
+                spielerB.setWins(spielerB.getWins()+1);
+                spielerA.setLose(spielerA.getLose()+1);
+                return "Player B wins";
             }
-            if (spielerA.paperScissorsStone == 1){
-                spielerB.wins++;
-                spielerA.lose++;
+            if (spielerA.getChoice() == 1){
+                spielerA.setIndecisive(spielerA.getIndecisive()+1);
+                spielerB.setIndecisive(spielerA.getIndecisive()+1);
+                return "indecisive";
             }
-            if (spielerA.paperScissorsStone == 2){
-                spielerA.indecisive++;
-                spielerB.indecisive++;
+            if (spielerA.getChoice() == 2){
+                spielerA.setWins(spielerA.getWins()+1);
+                spielerB.setLose(spielerB.getLose()+1);
+                return "Player A wins";
             }
         }
+        if (spielerB.getChoice() == 2){
+            if (spielerA.getChoice() == 0){
+                spielerA.setWins(spielerA.getWins()+1);
+                spielerB.setLose(spielerB.getLose()+1);
+                return "Player A wins";
+            }
+            if (spielerA.getChoice() == 1){
+                spielerB.setWins(spielerB.getWins()+1);
+                spielerA.setLose(spielerA.getLose()+1);
+                return "Player B wins";
+            }
+            if (spielerA.getChoice() == 2){
+                spielerA.setIndecisive(spielerA.getIndecisive()+1);
+                spielerB.setIndecisive(spielerA.getIndecisive()+1);
+                return "indecisive";
+            }
+        }
+        return"Game not functioning as expected";
     }
 
 }

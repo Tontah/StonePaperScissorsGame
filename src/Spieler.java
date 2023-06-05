@@ -1,19 +1,19 @@
 public class Spieler {
-    int paperScissorsStone;
-    String name;
-    int wins;
-    int lose;
-    int indecisive;
-    public Spieler(int random, String name, int wins, int lose, int indecisive){
-        this.paperScissorsStone = random;
+    private int choice;
+    private String name;
+   private int wins;
+    private int lose;
+    private int indecisive;
+    public Spieler(int choice, String name, int wins, int lose, int indecisive){
+        this.choice = choice;
         this.name = name;
         this.wins = wins;
         this.lose = lose;
         this.indecisive = indecisive;
     }
 
-    public void setPaperScissorsStone(int paperScissorsStone) {
-        this.paperScissorsStone = paperScissorsStone;
+    public void setChoice(int choice) {
+        this.choice = choice;
     }
 
     public void setName(String name) {
@@ -32,8 +32,8 @@ public class Spieler {
         this.indecisive = indecisive;
     }
 
-    public int getPaperScissorsStone() {
-        return paperScissorsStone;
+    public int getChoice() {
+        return choice;
     }
 
     public String getName() {
