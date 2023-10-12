@@ -7,19 +7,20 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         int numberOfRounds = 0;
-        Spieler spielerA = new Spieler(0,"A",0,0,0);
-        Spieler spielerB = new Spieler(0,"b", 0,0,0);
+        Player playerA = new Player(StonePaperScissors.Choices.PAPER,"A",0,0,0);
+        Player playerB = new Player(StonePaperScissors.Choices.PAPER,"b", 0,0,0);
 
         Random rand = new Random();
 
+
         while (numberOfRounds<100){
-            SteinPapierSchere.game(spielerA , spielerB );
-            spielerB.setChoice(rand.nextInt(3));
+            StonePaperScissors.game(playerA, playerB);
+           playerB.setChoice(StonePaperScissors.Choices.values()[rand.nextInt(StonePaperScissors.Choices.values().length)]);
 
             numberOfRounds++;
         }
-            System.out.println("Spieler A gewinnt "+ spielerA.getWins() + " von "+ (numberOfRounds) +" Spielen");
-            System.out.println("Spieler B gewinnt "+ spielerB.getWins() + " von "+ (numberOfRounds) +" Spielen");
-            System.out.println("Unentschieden: " + spielerA.getIndecisive() +" von "+ (numberOfRounds) +" Spielen");
+            System.out.println("Spieler A gewinnt "+ playerA.getWins() + " von "+ (numberOfRounds) +" Spielen");
+            System.out.println("Spieler B gewinnt "+ playerB.getWins() + " von "+ (numberOfRounds) +" Spielen");
+            System.out.println("Unentschieden: " + playerA.getIndecisive() +" von "+ (numberOfRounds) +" Spielen");
     }
 }

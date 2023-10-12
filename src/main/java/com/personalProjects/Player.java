@@ -1,12 +1,12 @@
 package com.personalProjects;
 
-public class Spieler {
-    private int choice;
+public class Player {
+    private StonePaperScissors.Choices choice;
     private String name;
    private int wins;
     private int lose;
     private int indecisive;
-    public Spieler(int choice, String name, int wins, int lose, int indecisive){
+    public Player(StonePaperScissors.Choices choice, String name, int wins, int lose, int indecisive){
         this.choice = choice;
         this.name = name;
         this.wins = wins;
@@ -14,7 +14,7 @@ public class Spieler {
         this.indecisive = indecisive;
     }
 
-    public boolean setChoice(int choice) {
+    public boolean setChoice(StonePaperScissors.Choices choice) {
         this.choice = choice;
         return true;
     }
@@ -39,7 +39,7 @@ public class Spieler {
         return true;
     }
 
-    public int getChoice() {
+    public StonePaperScissors.Choices getChoice() {
         return choice;
     }
 

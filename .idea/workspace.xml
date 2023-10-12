@@ -4,30 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb7258e-1e87-4a9f-8a2e-67a7ba22bd7d" name="Changes" comment="added maven , updated the code">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest,indecisiveStone_and_6_more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_bScissorsAStone9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_indecisivePaper5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/Spieler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/SteinPapierSchere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/personalProjects/SteinPapierSchereTest.java" afterDir="false" />
+    <list default="true" id="cdb7258e-1e87-4a9f-8a2e-67a7ba22bd7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/StonePaperScissors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/personalProjects/StonePaperScissorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_bScissorsAStone9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results - SteinPapierSchereTest_bScissorsAStone9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/personalProjects/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/personalProjects/Spieler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/personalProjects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/personalProjects/SteinPapierSchere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/personalProjects/SteinPapierSchereTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +25,7 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2QugEjJRalpAAPksoiGKQXInICu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,8 +51,8 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SteinPapierSchereTest.aPaperBStone">
-    <configuration name="SteinPapierSchereTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="StonePaperScissorsTest.aPaperBStone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Werkkstudent_bewerbung1" />
       <extension name="coverage">
         <pattern>
@@ -72,29 +61,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.personalProjects" />
-      <option name="MAIN_CLASS_NAME" value="com.personalProjects.SteinPapierSchereTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SteinPapierSchereTest.aPaperBStone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Werkkstudent_bewerbung1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.personalProjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.personalProjects" />
-      <option name="MAIN_CLASS_NAME" value="com.personalProjects.SteinPapierSchereTest" />
+      <option name="MAIN_CLASS_NAME" value="com.personalProjects.StonePaperScissorsTest" />
       <option name="METHOD_NAME" value="aPaperBStone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SteinPapierSchereTest.bScissorsAStone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StonePaperScissorsTest.bScissorsAStone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Werkkstudent_bewerbung1" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +77,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.personalProjects" />
-      <option name="MAIN_CLASS_NAME" value="com.personalProjects.SteinPapierSchereTest" />
+      <option name="MAIN_CLASS_NAME" value="com.personalProjects.StonePaperScissorsTest" />
       <option name="METHOD_NAME" value="bScissorsAStone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SteinPapierSchereTest.bScissorsAStoneIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StonePaperScissorsTest.indecisivePaper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Werkkstudent_bewerbung1" />
       <extension name="coverage">
         <pattern>
@@ -119,36 +93,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.personalProjects" />
-      <option name="MAIN_CLASS_NAME" value="com.personalProjects.SteinPapierSchereTest" />
-      <option name="METHOD_NAME" value="bScissorsAStoneIncrement" />
+      <option name="MAIN_CLASS_NAME" value="com.personalProjects.StonePaperScissorsTest" />
+      <option name="METHOD_NAME" value="indecisivePaper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SteinPapierSchereTest,indecisiveStone and 6 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StonePaperScissorsTest.indecisiveScissors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Werkkstudent_bewerbung1" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,indecisiveStone" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,indecisiveScissors" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,aPaperBStone" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,aPaperBScissors" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,aScissorsBStone" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,bPaperAStone" />
-        <pattern testClass="com.personalProjects.SteinPapierSchereTest,bPaperAScissors" />
-      </patterns>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personalProjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.personalProjects" />
+      <option name="MAIN_CLASS_NAME" value="com.personalProjects.StonePaperScissorsTest" />
+      <option name="METHOD_NAME" value="indecisiveScissors" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StonePaperScissorsTest.indecisiveStone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Werkkstudent_bewerbung1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personalProjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.personalProjects" />
+      <option name="MAIN_CLASS_NAME" value="com.personalProjects.StonePaperScissorsTest" />
+      <option name="METHOD_NAME" value="indecisiveStone" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SteinPapierSchereTest.aPaperBStone" />
-        <item itemvalue="JUnit.SteinPapierSchereTest.bScissorsAStone" />
-        <item itemvalue="JUnit.SteinPapierSchereTest.bScissorsAStoneIncrement" />
-        <item itemvalue="JUnit.SteinPapierSchereTest,indecisiveStone and 6 more" />
-        <item itemvalue="JUnit.SteinPapierSchereTest" />
+        <item itemvalue="JUnit.StonePaperScissorsTest.indecisivePaper" />
+        <item itemvalue="JUnit.StonePaperScissorsTest.indecisiveStone" />
+        <item itemvalue="JUnit.StonePaperScissorsTest.indecisiveScissors" />
+        <item itemvalue="JUnit.StonePaperScissorsTest.aPaperBStone" />
+        <item itemvalue="JUnit.StonePaperScissorsTest.bScissorsAStone" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +151,14 @@
       <option name="presentableId" value="Default" />
       <updated>1686208773433</updated>
     </task>
+    <task id="LOCAL-00001" summary="added maven , updated the code">
+      <created>1686858401170</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686858401170</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
